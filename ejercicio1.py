@@ -3,7 +3,8 @@ def ordenar_numeros(numeros_lista):
     print(numeros_lista)
 numeros= []
 while True:
-    numeros.append(int(input('Introduzca números para ser ordenados (escriba 0 par terminar de escribir): ')))
+    numeros.append(int(input('Introduzca números para ser ordenados (escriba 0 para terminar de escribir): ')))
     if numeros[-1] == 0:
+        numeros.remove('exit')
         break
 ordenar_numeros(numeros)
